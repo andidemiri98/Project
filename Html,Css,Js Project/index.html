@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+    <title>TaskTracker - ToDo List</title>
+</head>
+<body>
+    <div class="header-container fade-in">
+        <header>
+            <h1 class="header-title">TaskTracker</h1>
+        </header>
+    </div>
+    <div class="content-container fade-in">
+        <div class="card">
+            <h2>Welcome to TaskTracker</h2>
+            <p>Your personal task management application. Stay organized and productive!</p>
+        </div>
+        <div class="card">
+            <h2>How to Use</h2>
+            <p>This simple yet powerful to-do list allows you to add, complete, and edit tasks effortlessly. Get started by adding your first task below.</p>
+        </div>
+        <div class="card" id="app">
+            <h2>Add a New Task</h2>
+            <input type="text" id="taskInput" placeholder="Enter your task...">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
